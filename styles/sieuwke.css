@@ -17,10 +17,10 @@ button {
     gap: 1rem;
     justify-content: start;
     padding: 1rem;
-    overflow: scroll;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scrollbar-color: transparent transparent;
     scroll-padding: 0.5rem;
+    
 }
 .profile {
     display: grid;
