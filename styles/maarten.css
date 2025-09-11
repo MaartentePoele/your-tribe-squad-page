@@ -1,9 +1,10 @@
 * {
+    /* Zorgt ervoor dat de padding en border bij de breedte horen */
     box-sizing: border-box;
-
 }
 
 .visually-hidden {
+    /* Verbergt de titel van elke section */
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     height: 1px;
@@ -14,6 +15,7 @@
 }
 
 body {
+    /* Roboto font */
     color: white;
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -24,6 +26,7 @@ body {
 }
 
 header {
+    /* Blok bovenin */
     background-color: #351fb7;
     display: flex;
     justify-content: space-evenly;
@@ -32,53 +35,31 @@ header {
 }
 
 h1 {
+    /* Opmaak navigatie */
     font-size: 2em;
     font-weight: bold;
 }
 
 a {
+    /* Verbergt de opmaak van een link */
     text-decoration: none;
     color: white;
 }
 
 a:hover {
+    /* Laat zien dat je op het woord kan klikken */
     text-decoration: underline;
     color: #f35279;
 }
 
 .slider {
+    /* Blok boven de header waar op de Squad Page een slider komt met alle gezichten van de Squad */
     background-color: #25167a;
     height: 16em;
 }
 
-/* .profile {
-    height: 10em;
-    aspect-ratio: 1;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .image-wrapper {
-    height: 10em;
-    aspect-ratio: 1;
-} */
-
-/* img:not(.profile-card) {
-    border-radius: 50%;
-    border-color: black;
-    border-width: 3px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-} */
-
-/* .name {
-    display: flex;
-    justify-content: center;
-} */
-
 .content {
+    /* Laat alle content in een 2xn grid zien als de pagina >960px is */
     background-color: #351fb7;
     padding: 5em;
     display: grid;
@@ -92,6 +73,7 @@ a:hover {
 }
 
 .profile-cards {
+    /* Box om alle visitekaartjes */
     background-color: grey;
     width: 25em;
     aspect-ratio: 1;
@@ -100,23 +82,15 @@ a:hover {
 }
 
 p {
+    /* Box om alle Amstelcampusfoto's */
     width: 25em;
     aspect-ratio: 1;
     margin: 0;
-    
+
 }
 
 img {
+    /* Laat alle img de hele box opvullen en geeft ronde hoeken */
     width: 100%;
     border-radius: 5%;
 }
-
-/* @keyframes scroll {
-    from {
-        transform: translateX(0)
-    }
-
-    to {
-        transform: translateX(50%);
-    }
-} */
