@@ -96,16 +96,19 @@ a:hover {
     width: 25em;
     aspect-ratio: 1;
     margin: 0;
+    border-radius: 5%;
 }
 
 p {
     width: 25em;
     aspect-ratio: 1;
     margin: 0;
+    
 }
 
 img {
     width: 100%;
+    border-radius: 5%;
 }
 
 /* @keyframes scroll {
