@@ -45,7 +45,7 @@ button {
 p {
     margin: 0;
 }
-img {
+.profile img {
     display: block;
     object-fit: cover;
     position: relative;
@@ -55,8 +55,33 @@ img {
     border-radius: 50%;
     box-shadow: 0 0 5px 5px rgba(132, 132, 132, 0.279);
     transition: .25s .15s;
-    
+      
 }
+
+.TTH {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.TTH img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+.KSH img {
+    float: left;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 30%;
+    height: 30%;
+}
+
 
 @media (width > 600px) {
     .profile div {
