@@ -209,7 +209,7 @@ header button:hover {
     transition: transform 1s;
 }
 
-img {
+.profile img {
     display: block;
     object-fit: cover;
     position: relative;
@@ -246,3 +246,11 @@ img {
     transform: rotateZ(180deg);
 }
 
+.gallery img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.gallery {
+    columns: 250px;
+}
