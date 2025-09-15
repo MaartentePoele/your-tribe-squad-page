@@ -249,8 +249,11 @@ header button:hover {
 .gallery img {
     width: 100%;
     margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
 }
 
 .gallery {
-    columns: 250px;
+    columns:15em;
+    margin: 0.5em;
 }
