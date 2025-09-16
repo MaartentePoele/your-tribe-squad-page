@@ -2,7 +2,7 @@
 html { 
     /*scrollen in html-element stopt 5em van de bovenkant en gaat smooth*/
     scroll-padding-top: 5em;
-    @media (preferce-reduced-motion:no-preference){
+    @media (prefers-reduced-motion:no-preference){
         scroll-behavior: smooth;
     }
 }
@@ -11,7 +11,6 @@ body {
     background-color: #351fb7;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 h1 {
