@@ -15,6 +15,15 @@
     box-sizing: border-box;
 }
 
+html {
+    /*scrollen in html-element stopt 5em van de bovenkant en gaat smooth*/
+    scroll-padding-top: 5em;
+
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
+}
+
 body {
     color: white;
     margin: 0;
