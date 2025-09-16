@@ -68,12 +68,13 @@ header {
     a:focus,
     a:hover {
         /* Kleur van link veranderd als je er overheen hovert*/
-      color: #879bdc;
+      color: #f35279;
+      cursor: pointer;
     }
 
     a:active {
         /* Kleur van link veranderd als je er op klikt */
-        color: blue;
+        color: #ff92ad
     }
     
 }
@@ -92,23 +93,27 @@ header {
     background-color: #25167a;
 }
 
+
+/*Animatie vak*/
 .slide-track {
-    /*Animatie vak*/
     display: flex;
-    width:calc(16em * 46);
+    /* Breedte slide-track = individule slide (.profile width) x totale aantal slides (23 foto's x 2) */
+    width:calc(11em * 46);
     animation: scroll 80s linear infinite;
 }
 .slide-track:hover {
+    /* Animatie stopt als je over de slide-track hovert */
     animation-play-state: paused;
 }
 
+/*Animatie vak dat scrollt*/
 @keyframes scroll { 
-    /*Animatie vak dat scrollt*/
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-16em * 23));
+        /* Beweegt de slide-track naar links (.profile -width) voor de helft van de breedte van de slide-track (46 foto's / 2 = 23) */
+        transform: translateX(calc(-11em * 23));
     }
 }
 
@@ -118,7 +123,6 @@ header {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 15px;
     perspective: 100px;
     h2 {
         padding-top: 0.3rem;
@@ -142,7 +146,7 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 5px solid #ffffff;
+    border: 5px solid #c1bcff;
     border-radius: 50%;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
     transition: .25s .15s;
@@ -152,22 +156,22 @@ header {
 
 /* Gradient Shadows zijkanten van de carousel */
 
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, rgb(37, 22, 122) 0%, rgba(255,255,255,0) 100%);
+#squad-page-1j::before,
+#squad-page-1j::after {
+    background: linear-gradient(to right, #25167a 0%, rgba(255,255,255,0) 100%);
     content: '';
     height: 100%;
     position: absolute;
-    width: 20%;
+    width: 4%;
     z-index: 2;
 }
 
-.slider::before {
+#squad-page-1j::before {
     left: 0;
     top: 0;
 }
 
-.slider::after {
+#squad-page-1j::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
