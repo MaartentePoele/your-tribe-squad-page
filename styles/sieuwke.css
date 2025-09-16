@@ -1,8 +1,17 @@
 /* Basis */
+html { 
+    /*scrollen in html-element stopt 5em van de bovenkant en gaat smooth*/
+    scroll-padding-top: 5em;
+    @media (preferce-reduced-motion:no-preference){
+        scroll-behavior: smooth;
+    }
+}
+
 body {
     background-color: #351fb7;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 h1 {
@@ -19,16 +28,21 @@ h2 {
 header {
     display: flex;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding: 1rem;
     font-size: larger;
     background-color: #351fb7;
     color: #ffffff;
     
-    a:link{ /*Lijn onder hyperlink weggehaald*/
+    a:link{ 
+        /*Lijn onder hyperlink weggehaald*/
         text-decoration: none;
     }
 
-    a:visited{ /*Kleur verwijderd als je op de site bent geweest*/
+    a:visited{ 
+        /*Kleur verwijderd als je op de site bent geweest*/
         color: #ffffff;
     }
 
@@ -37,18 +51,19 @@ header {
 
 
 /* Carrousel */
-.slider { /*Carrousel sectie*/
+#slider {
+    /*Carrousel sectie*/
     height: 15rem;
     margin: auto;
     position: relative;
-    width: 90%;
+    width: 100%;
     display: grid;
     overflow: hidden;
     background-color: #25167a;
-    border-radius: 30px;
 }
 
-.slide-track { /*Animatie vak*/
+.slide-track {
+    /*Animatie vak*/
     display: flex;
     width:calc(16em * 46);
     animation: scroll 80s linear infinite;
@@ -57,7 +72,8 @@ header {
     animation-play-state: paused;
 }
 
-@keyframes scroll { /*Animatie vak dat scrollt*/
+@keyframes scroll { 
+    /*Animatie vak dat scrollt*/
     0% {
         transform: translateX(0);
     }
@@ -128,7 +144,8 @@ header {
 }
 
 /* Gallerij sectie */
-.gallery { /*Gallerij vak*/
+.gallery {
+    /*Gallerij vak*/
     max-width: 90%;
     justify-self: center;
     columns:3;
@@ -136,7 +153,8 @@ header {
     background-color: #25167a;
     border-radius: 30px;
 }
-.gallery img { /*Foto's in gallerij*/
+.gallery img {
+    /*Foto's in gallerij*/
     justify-self: center;
     width: 90%;
     margin: 1em;
