@@ -53,5 +53,25 @@ body {
 
 
 /* BEGIN KEVIN */
+*{
+    box-sizing: border-box;
+}
+.TTH ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 20px;
+    margin: 0;
+    list-style-type: "";
+}
 
+.TTH img {
+    width: 100%;
+}
+
+@media (width > 768px){
+.TTH ul{
+    grid-template-columns: 1fr 1fr;
+}
+}
 /* EINDE KEVIN */
