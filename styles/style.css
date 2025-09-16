@@ -42,6 +42,137 @@ body {
 
 /* BEGIN SIEUWKE */
 
+/* Header met navigatie */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1rem;
+    font-size: larger;
+    background-color: #351fb7;
+    color: #ffffff;
+    
+    a {
+        color: white;
+        /*Lijn onder hyperlink weggehaald*/
+        text-decoration: none;
+    }
+
+    a:visited {
+        /*Kleur van link veranderd als je op de site bent geweest*/
+      color: white;
+    }
+
+    a:focus,
+    a:hover {
+        /* Kleur van link veranderd als je er overheen hovert*/
+      color: #879bdc;
+    }
+
+    a:active {
+        /* Kleur van link veranderd als je er op klikt */
+        color: blue;
+    }
+    
+}
+
+
+
+/* Carrousel */
+#squad-page-1j {
+    /*Carrousel sectie*/
+    height: 15rem;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+    background-color: #25167a;
+}
+
+.slide-track {
+    /*Animatie vak*/
+    display: flex;
+    width:calc(16em * 46);
+    animation: scroll 80s linear infinite;
+}
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll { 
+    /*Animatie vak dat scrollt*/
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-16em * 23));
+    }
+}
+
+/* Foto's met namen */
+.profile {
+    width: 11em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    h2 {
+        padding-top: 0.3rem;
+    }
+}
+
+.profile div {
+    width: 10em;
+    aspect-ratio: 1;
+    grid-row-start: 1;
+}
+
+.profile div:hover {
+    transform: translateZ(10px);
+    transition: transform 1s;
+}
+
+.profile img {
+    display: block;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+    transition: .25s .15s;
+    
+}
+
+
+/* Gradient Shadows zijkanten van de carousel */
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgb(37, 22, 122) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 20%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
 /* EINDE SIEUWKE */
 
 
@@ -53,5 +184,25 @@ body {
 
 
 /* BEGIN KEVIN */
+*{
+    box-sizing: border-box;
+}
+.TTH ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 20px;
+    margin: 0;
+    list-style-type: "";
+}
 
+.TTH img {
+    width: 100%;
+}
+
+@media (width > 768px){
+.TTH ul{
+    grid-template-columns: 1fr 1fr;
+}
+}
 /* EINDE KEVIN */
