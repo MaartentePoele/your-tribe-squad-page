@@ -55,9 +55,10 @@ header {
     top: 0;
     z-index: 10;
     padding: 1rem;
-    font-size: larger;
+    font-size: small;
     background-color: #351fb7;
     color: #ffffff;
+    max-width: 100vw;
 
     a {
         color: white;
@@ -82,9 +83,18 @@ header {
         color: #ff92ad
     }
 
+    @media (min-width: 768px) and (max-width: 992px) {
+        font-size: 1em;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        font-size: 1.2em;
+    }
+
+    @media (min-width: 1200px) { 
+        font-size: 1.5em;
+    }
 }
-
-
 
 /* Carrousel */
 #squad-page-1j {
@@ -96,6 +106,18 @@ header {
     display: grid;
     overflow: hidden;
     background-color: #25167a;
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        height: 18rem;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1200px) {
+        height: 20rem;
+    }
+
+    @media (min-width: 1200px) { 
+        height: 22rem;
+    }
 }
 
 
@@ -105,6 +127,14 @@ header {
     /* Breedte slide-track = individule slide (.profile width) x totale aantal slides (23 foto's x 2) */
     width: calc(11em * 46);
     animation: scroll 80s linear infinite;
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        width: calc(15em * 46);
+    }
+
+    @media (min-width: 1200px) { 
+        width: calc(17em * 46);
+    }
 }
 
 .slide-track:hover {
@@ -122,26 +152,62 @@ header {
         /* Beweegt de slide-track naar links (.profile -width) voor de helft van de breedte van de slide-track (46 foto's / 2 = 23) */
         transform: translateX(calc(-11em * 23));
     }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        100% {
+            transform: translateX(calc(-15em * 23));
+        }
+    }
+
+    @media (min-width: 1200px) {
+        100% {
+            transform: translateX(calc(-17em * 23));
+        }
+    }
+
 }
 
 /* Foto's met namen */
 .profile {
     width: 11em;
+    margin: 1rem 0.5rem 0;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     perspective: 100px;
 
-    h2 {
-        padding-top: 0.3rem;
+    @media (min-width: 768px) and (max-width: 992px) {
+        margin: 1rem 1.5rem 0;
     }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        width: 15em;
+    }
+    
+    @media (min-width: 1200px) { 
+        width: 17em;
+    }
+
 }
 
 .profile div {
-    width: 10em;
+    width: 11em;
     aspect-ratio: 1;
     grid-row-start: 1;
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        width: 13rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        width: 15rem;
+    }
+
+    @media (min-width: 1200px) { 
+        width: 17rem;
+    }
 }
+
 
 .profile div:hover {
     transform: translateZ(10px);
@@ -154,16 +220,13 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 5px solid #c1bcff;
     border-radius: 50%;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
     transition: .25s .15s;
 
 }
 
-
 /* Gradient Shadows zijkanten van de carousel */
-
 #squad-page-1j::before,
 #squad-page-1j::after {
     background: linear-gradient(to right, #25167a 0%, rgba(255, 255, 255, 0) 100%);
