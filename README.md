@@ -87,7 +87,7 @@ Beginner guide to Media Queries @ MDN https://developer.mozilla.org/en-US/docs/L
 
 A Complete Guide to CSS Media Queries @ CSS Tricks https://css-tricks.com/a-complete-guide-to-css-media-queries/
 
-##Licentie
+## Licentie
 
 
 
