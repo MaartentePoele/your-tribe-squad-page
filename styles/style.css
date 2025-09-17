@@ -247,8 +247,16 @@ header {
 * {
     box-sizing: border-box;
 }
+    /* opmaak box
+    background-color: #25167a;
+    margin: 2em;
+    padding-left: 2em;
+    padding-top: 1em;
+    border-radius: 25px;
+     */
 
-.TTH ul {
+#amstelcampus ul {
+    align-content: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -257,12 +265,12 @@ header {
     list-style-type: "";
 }
 
-.TTH img {
+#amstelcampus img {
     width: 100%;
 }
 
 @media (width > 768px) {
-    .TTH ul {
+    #amstelcampus ul {
         grid-template-columns: 1fr 1fr;
     }
 }
