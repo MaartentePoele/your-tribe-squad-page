@@ -26,6 +26,7 @@ html {
 
 body {
     color: white;
+    background-color: #351fb7;
     margin: 0;
 
     /* Roboto font */
@@ -34,6 +35,10 @@ body {
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+}
+
+h1 {
+    font-size: 5em;
 }
 
 /* EINDE GEZAMENLIJK */
@@ -186,18 +191,31 @@ header {
 
 /* BEGIN MAARTEN */
 
+.welkom {
+    justify-items: center;
+}
+
 #visitekaartjes {
+    /* opmaak box met titel */
     background-color: #25167a;
-    margin: 2em 2em 0em 2em;
-    padding: 1em 1em 1em 2em;
+
+    margin: 2em;
+    margin-bottom: 0em;
+    padding: 1em;
+    padding-left: 2em;
+
     border-radius: 25px 25px 0px 0px;
 }
 
 .kaartjes {
-    /* opmaak box */
+    /* opmaak box met kaartjes*/
     background-color: #25167a;
-    margin: 0em 2em 2em 2em;
-    padding: 0em 2em 2em 2em;
+
+    margin: 2em;
+    margin-top: 0em;
+    padding: 2em;
+    padding-top: 0em;
+
     border-radius: 0px 0px 25px 25px;
 
     columns: 1;
@@ -215,6 +233,7 @@ header {
 }
 
 .kaartje {
+    /* opmaak kaartjes */
     width: 100%;
     border-radius: 25px;
     margin-bottom: 1em;
