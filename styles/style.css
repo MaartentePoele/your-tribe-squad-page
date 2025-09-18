@@ -330,10 +330,6 @@ header {
 
 
 /* BEGIN KEVIN */
-* {
-    box-sizing: border-box;
-}
-
 #amstelcampus {
     background-color: #25167a;
     margin: 2em 2em 0em 2em;
@@ -349,22 +345,22 @@ header {
     padding: 20px;
     margin: 0;
     list-style-type: "";
+
+    @media (width > 750px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 #amstelcampus img {
     width: 100%;
 }
 
-@media (width > 768px) {
-    #amstelcampus ul {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 footer {
-    background-color: #c1bcff;
-    height: 200px;
-    width: 100%
+    background-color: #000000;
+    height: 10px;
+    width: 100%;
+    text-align:center;
+    padding-top: 50px;
 }
 
 /* EINDE KEVIN */
