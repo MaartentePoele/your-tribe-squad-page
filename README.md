@@ -1,12 +1,12 @@
 # Squad Page 1J
 
 ## Inhoudsopgave
-- Beschrijving
-- Gebruik
-- Kenmerken
-- Over ons
-- Bronnen
-- Licentie
+- [Beschrijving](#beschrijving)
+- [Gebruik](#gebruik)
+- [Kenmerken](#kenmerken)
+- [Over ons](#over-ons)
+- [Bronnen](#bronnen)
+- [Licentie](#licentie)
   
 ### Beschrijving
 Ons project geeft een overzicht van de medestudenten van onze squad (klas) en laat locaties op de Amstelcampus zien. 
