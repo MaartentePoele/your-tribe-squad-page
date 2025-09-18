@@ -93,19 +93,20 @@ Wij zijn [Maarten](https://github.com/MaartentePoele), [Kevin](https://github.co
 Gebruikers kunnen informatie krijgen over onze website door één van ons aan te spreken of te berichten.
 
 ## Bronnen
-HTML elements reference https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+- [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
 
-What is JavaScript? MDN beginner's JavaScript course https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript
+- [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-CSS reference https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+- [CSS Grid reference](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-CSS Grid reference https://css-tricks.com/snippets/css/complete-guide-grid/
+- [Beginner guide to Media Queries @ MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries)
 
-Beginner guide to Media Queries @ MDN https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries
+- [A Complete Guide to CSS Media Queries @ CSS Tricks](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
 
-A Complete Guide to CSS Media Queries @ CSS Tricks https://css-tricks.com/a-complete-guide-to-css-media-queries/
+- [Video naar het maken van automatische sliders in CSS](https://www.youtube.com/watch?v=3Z780EOzIQs&t=67s&ab_channel=TheMuteDev)
 
 ## Licentie
 
+This project is licensed under the terms of the [MIT license](./LICENSE).
 
 

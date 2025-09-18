@@ -282,7 +282,7 @@ header {
     }
 
     @media (min-width: 960px) {
-        /* kaartjes gaan in drie kolommen bij een paginabreedte van 960px of meer */
+        /* kaartjes gaan in drie kolommen bij een paginabreedte vanaf 960px */
         columns: 3;
     }
 }
@@ -292,7 +292,7 @@ header {
     width: 100%;
     border-radius: 25px;
     margin-bottom: 1em;
-    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.50);
+    box-shadow: 4px 8px 8px rgb(0 0 0 / 50%);
 
     /* animatie */
     transition: transform 0.25s ease-in-out;
@@ -303,7 +303,7 @@ header {
     /* animatie alleen als de gebruiker animation effects aan heeft staan */
     @media (prefers-reduced-motion: no-preference) {
         transform: scale(1.025);
-        box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+        box-shadow: 8px 16px 16px rgb(0 0 0 / 25%);
     }
 }
 
@@ -312,15 +312,11 @@ header {
 
 
 /* BEGIN KEVIN */
-* {
-    box-sizing: border-box;
-}
-
 #amstelcampus {
     background-color: #25167a;
-    margin: 2em 2em 0em 2em;
+    margin: 2em;
     padding: 1em 1em 1em 2em;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 25px;
 }
 
 #amstelcampus ul {
@@ -331,22 +327,28 @@ header {
     padding: 20px;
     margin: 0;
     list-style-type: "";
+
+    @media (width > 750px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 #amstelcampus img {
     width: 100%;
 }
 
-@media (width > 768px) {
-    #amstelcampus ul {
-        grid-template-columns: 1fr 1fr;
-    }
+footer {
+    background-color: #150d3d;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 2em;
+}
+.link-footer {
+    text-decoration: none;
+    color:white;
 }
 
-footer {
-    background-color: #c1bcff;
-    height: 200px;
-    width: 100%
-}
 
 /* EINDE KEVIN */
