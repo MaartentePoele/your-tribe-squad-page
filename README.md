@@ -17,7 +17,7 @@ De pagina is responsive en is Mobile first ontworpen en gemaakt.
 #### 3 leuke dingen over onze site:
 - de carouselfunctie die de foto’s van onze medestudenten laat zien
 - de knoppen op de header die een animatie hebben
-- de responsiveness van de site voor telefoongebruik
+- We hebben het kleurenpalet van de HvA website gebruikt
 
 Hier staat de website: https://edu.nl/7wnje 
 
