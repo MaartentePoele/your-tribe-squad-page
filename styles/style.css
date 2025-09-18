@@ -339,9 +339,9 @@ header {
 /* BEGIN KEVIN */
 #amstelcampus {
     background-color: #25167a;
-    margin: 2em 2em 0em 2em;
+    margin: 2em;
     padding: 1em 1em 1em 2em;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 25px;
 }
 
 #amstelcampus ul {
@@ -363,11 +363,12 @@ header {
 }
 
 footer {
-    background-color: #000000;
-    height: 10px;
+    background-color: #150d3d;
+    height: 100px;
     width: 100%;
     text-align:center;
     padding-top: 50px;
+    margin-top: 2em;
 }
 
 /* EINDE KEVIN */
