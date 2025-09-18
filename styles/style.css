@@ -273,5 +273,10 @@ header {
         grid-template-columns: 1fr 1fr;
     }
 }
+footer{
+    background-color: #c1bcff;
+    height: 200px;
+    width: 100%
+}
 
 /* EINDE KEVIN */
