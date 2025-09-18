@@ -91,7 +91,7 @@ header {
         font-size: 1.2em;
     }
 
-    @media (min-width: 1200px) { 
+    @media (min-width: 1200px) {
         font-size: 1.5em;
     }
 }
@@ -110,12 +110,12 @@ header {
     @media (min-width: 768px) and (max-width: 992px) {
         height: 18rem;
     }
-    
+
     @media (min-width: 992px) and (max-width: 1200px) {
         height: 20rem;
     }
 
-    @media (min-width: 1200px) { 
+    @media (min-width: 1200px) {
         height: 22rem;
     }
 }
@@ -132,7 +132,7 @@ header {
         width: calc(15em * 46);
     }
 
-    @media (min-width: 1200px) { 
+    @media (min-width: 1200px) {
         width: calc(17em * 46);
     }
 }
@@ -183,8 +183,8 @@ header {
     @media (min-width: 992px) and (max-width: 1200px) {
         width: 15em;
     }
-    
-    @media (min-width: 1200px) { 
+
+    @media (min-width: 1200px) {
         width: 17em;
     }
 
@@ -203,7 +203,7 @@ header {
         width: 15rem;
     }
 
-    @media (min-width: 1200px) { 
+    @media (min-width: 1200px) {
         width: 17rem;
     }
 }
@@ -267,6 +267,7 @@ header {
     padding: 1em;
     padding-left: 2em;
 
+    /* geen border-radius links- en rechtsonder om aan de .kaartjes te plakken */
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -279,20 +280,28 @@ header {
     padding: 2em;
     padding-top: 0em;
 
+    /* geen border-radius links- en rechtsboven om aan de #visitekaartjes te plakken */
     border-radius: 0px 0px 25px 25px;
 
+    /* kaartjes gaan in één kolom bij een paginabreedte van minder dan 750px */
     columns: 1;
     column-gap: 1em;
+}
 
+@media (min-width: 750px) {
 
-    @media (min-width: 750px) {
+    /* kaartjes gaan in twee kolommen bij een paginabreedte tussen 750px en 959px */
+    .kaartjes {
         columns: 2;
     }
+}
 
-    @media (min-width: 960px) {
+@media (min-width: 960px) {
+
+    /* kaartjes gaan in drie kolommen bij een paginabreedte van 960px of meer */
+    .kaartjes {
         columns: 3;
     }
-
 }
 
 .kaartje {
@@ -310,6 +319,7 @@ header {
 * {
     box-sizing: border-box;
 }
+
 #amstelcampus {
     background-color: #25167a;
     margin: 2em 2em 0em 2em;
