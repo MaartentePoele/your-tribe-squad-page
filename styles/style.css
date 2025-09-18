@@ -337,13 +337,15 @@ header {
 
 
 /* BEGIN KEVIN */
+
+/* donker vlak achter de imgs */
 #amstelcampus {
     background-color: #25167a;
     margin: 2em;
     padding: 1em 1em 1em 2em;
     border-radius: 25px;
 }
-
+/* De grid van de imgs van de amstelcampus */
 #amstelcampus ul {
     align-content: center;
     display: grid;
@@ -361,7 +363,7 @@ header {
 #amstelcampus img {
     width: 100%;
 }
-
+/* (dit is de footer) */
 footer {
     background-color: #150d3d;
     height: 100px;
@@ -373,6 +375,7 @@ footer {
 .link-footer {
     text-decoration: none;
     color:white;
+    margin:10px;
 }
 
 
