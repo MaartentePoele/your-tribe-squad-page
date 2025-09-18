@@ -138,16 +138,8 @@ header {
 .slide-track {
     display: flex;
     /* Breedte slide-track = individule slide (.profile width) x totale aantal slides (23 foto's x 2) */
-    width: calc(11em * 46);
+    width: calc(17em * 46);
     animation: scroll 80s linear infinite;
-
-    @media (min-width: 992px) {
-        width: calc(15em * 46);
-    }
-
-    @media (min-width: 1200px) {
-        width: calc(17em * 46);
-    }
 }
 
 .slide-track:hover {
@@ -163,24 +155,9 @@ header {
 
     100% {
         /* Beweegt de slide-track naar links (.profile -width) voor de helft van de breedte van de slide-track (46 foto's / 2 = 23) */
-        transform: translateX(calc(-11em * 23));
-    }
-
-}
-
-/* Hoort bij de keyframes van hierboven */
-@media (min-width: 992px) { 
-    .profile {
-        transform: translateX(calc(-15em * 23));
-    }
-}
-
-@media (min-width: 1200px) {
-    .profile {
         transform: translateX(calc(-17em * 23));
     }
 }
-/* ------------------------------------------ */
 
 /* Foto's met namen */
 .profile {
@@ -202,7 +179,6 @@ header {
     @media (min-width: 1200px) {
         width: 17em;
     }
-
 }
 
 .profile div {
@@ -238,7 +214,6 @@ header {
     border-radius: 50%;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
     transition: .25s .15s;
-
 }
 
 /* Gradient Shadows zijkanten van de carousel */
@@ -307,7 +282,7 @@ header {
     }
 
     @media (min-width: 960px) {
-        /* kaartjes gaan in drie kolommen bij een paginabreedte van 960px of meer */
+        /* kaartjes gaan in drie kolommen bij een paginabreedte vanaf 960px */
         columns: 3;
     }
 }
@@ -317,7 +292,7 @@ header {
     width: 100%;
     border-radius: 25px;
     margin-bottom: 1em;
-    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.50);
+    box-shadow: 4px 8px 8px rgb(0 0 0 / 50%);
 
     /* animatie */
     transition: transform 0.25s ease-in-out;
@@ -328,7 +303,7 @@ header {
     /* animatie alleen als de gebruiker animation effects aan heeft staan */
     @media (prefers-reduced-motion: no-preference) {
         transform: scale(1.025);
-        box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+        box-shadow: 8px 16px 16px rgb(0 0 0 / 25%);
     }
 }
 
@@ -368,7 +343,7 @@ footer {
     background-color: #150d3d;
     height: 100px;
     width: 100%;
-    text-align:center;
+    text-align: center;
     padding-top: 50px;
     margin-top: 2em;
 }
