@@ -268,14 +268,11 @@ header {
 
 /* BEGIN MAARTEN */
 
-.welkom {
-    justify-items: center;
-}
-
 #visitekaartjes {
     /* opmaak box met titel */
     background-color: #25167a;
 
+    /* spacing van de titel */
     margin: 2em;
     margin-bottom: 0em;
     padding: 1em;
@@ -289,6 +286,7 @@ header {
     /* opmaak box met kaartjes*/
     background-color: #25167a;
 
+    /* spacing van de visitekaartjes */
     margin: 2em;
     margin-top: 0em;
     padding: 2em;
