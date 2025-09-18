@@ -15,8 +15,8 @@ Met behulp van de foto's kun je de GitHub-pagina's en de visitekaartjes van de d
 De pagina is responsive en is Mobile first ontworpen en gemaakt.
 
 #### 3 leuke dingen over onze site:
-- de carouselfunctie die de foto’s van onze medestudenten laat zien
-- de knoppen op de header die een animatie hebben
+- De carouselfunctie die de foto’s en namen van onze medestudenten laat zien
+- De knoppen op de header die een animatie hebben
 - We hebben het kleurenpalet van de HvA website gebruikt
 
 Hier staat de website: https://edu.nl/7wnje 
