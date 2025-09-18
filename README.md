@@ -21,6 +21,11 @@ De pagina is responsive en is Mobile first ontworpen en gemaakt.
 
 Hier staat de website: https://edu.nl/7wnje 
 
+
+![Mockup Squad Page](https://maartentepoele.github.io/your-tribe-squad-page/assets/all-devices-black.png)
+
+*Mockup van onze Squad Page*
+
 ## Gebruik
 
 De header heeft een blijvende navigatiebalk waardoor je op elk moment naar verschillende onderdelen van onze website kunt gaan.
