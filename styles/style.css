@@ -38,7 +38,20 @@ body {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 3em;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 3.5em;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 4em;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 4.5em;
+    }
 }
 
 /* EINDE GEZAMENLIJK */
@@ -83,11 +96,11 @@ header {
         color: #ff92ad
     }
 
-    @media (min-width: 768px) and (max-width: 992px) {
+    @media (min-width: 768px) {
         font-size: 1em;
     }
 
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) {
         font-size: 1.2em;
     }
 
@@ -107,11 +120,11 @@ header {
     overflow: hidden;
     background-color: #25167a;
 
-    @media (min-width: 768px) and (max-width: 992px) {
+    @media (min-width: 768px) {
         height: 18rem;
     }
 
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) {
         height: 20rem;
     }
 
@@ -128,7 +141,7 @@ header {
     width: calc(11em * 46);
     animation: scroll 80s linear infinite;
 
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) {
         width: calc(15em * 46);
     }
 
@@ -153,18 +166,19 @@ header {
         transform: translateX(calc(-11em * 23));
     }
 
-    @media (min-width: 992px) and (max-width: 1200px) {
-        100% {
-            transform: translateX(calc(-15em * 23));
-        }
-    }
+}
 
-    @media (min-width: 1200px) {
-        100% {
-            transform: translateX(calc(-17em * 23));
-        }
-    }
+@media (min-width: 992px) {
 
+    .profile {
+        transform: translateX(calc(-15em * 23));
+    }
+}
+
+@media (min-width: 1200px) {
+    .profile {
+        transform: translateX(calc(-17em * 23));
+    }
 }
 
 /* Foto's met namen */
@@ -176,11 +190,11 @@ header {
     align-items: center;
     perspective: 100px;
 
-    @media (min-width: 768px) and (max-width: 992px) {
+    @media (min-width: 768px) {
         margin: 1rem 1.5rem 0;
     }
 
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) {
         width: 15em;
     }
 
@@ -195,11 +209,11 @@ header {
     aspect-ratio: 1;
     grid-row-start: 1;
 
-    @media (min-width: 768px) and (max-width: 992px) {
+    @media (min-width: 768px) {
         width: 13rem;
     }
 
-    @media (min-width: 992px) and (max-width: 1200px) {
+    @media (min-width: 992px) {
         width: 15rem;
     }
 
@@ -345,6 +359,12 @@ header {
     #amstelcampus ul {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+footer {
+    background-color: #c1bcff;
+    height: 200px;
+    width: 100%
 }
 
 /* EINDE KEVIN */
