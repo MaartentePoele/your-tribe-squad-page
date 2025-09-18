@@ -299,20 +299,15 @@ header {
     /* kaartjes gaan in één kolom bij een paginabreedte van minder dan 750px */
     columns: 1;
     column-gap: 1em;
-}
 
-@media (min-width: 750px) {
-
-    /* kaartjes gaan in twee kolommen bij een paginabreedte tussen 750px en 959px */
-    .kaartjes {
+    /* mediaqueries */
+    @media (min-width: 750px) {
+        /* kaartjes gaan in twee kolommen bij een paginabreedte tussen 750px en 959px */
         columns: 2;
     }
-}
 
-@media (min-width: 960px) {
-
-    /* kaartjes gaan in drie kolommen bij een paginabreedte van 960px of meer */
-    .kaartjes {
+    @media (min-width: 960px) {
+        /* kaartjes gaan in drie kolommen bij een paginabreedte van 960px of meer */
         columns: 3;
     }
 }
@@ -322,6 +317,19 @@ header {
     width: 100%;
     border-radius: 25px;
     margin-bottom: 1em;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.50);
+
+    /* animatie */
+    transition: transform 0.25s ease-in-out;
+}
+
+.kaartje:hover {
+
+    /* animatie alleen als de gebruiker animation effects aan heeft staan */
+    @media (prefers-reduced-motion: no-preference) {
+        transform: scale(1.025);
+        box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    }
 }
 
 /* EINDE MAARTEN */

@@ -1,16 +1,15 @@
 # Squad Page 1J
 
 ## Inhoudsopgave
-- Beschrijving
-- Gebruik
-- Kenmerken
-- Over ons
-- Bronnen
-- Licentie
+- [Beschrijving](#beschrijving)
+- [Gebruik](#gebruik)
+- [Kenmerken](#kenmerken)
+- [Over ons](#over-ons)
+- [Bronnen](#bronnen)
+- [Licentie](#licentie)
   
-### Beschrijving
+## Beschrijving
 Ons project geeft een overzicht van de medestudenten van onze squad (klas) en laat locaties op de Amstelcampus zien. 
-
 Met behulp van de foto's kun je de GitHub-pagina's en de visitekaartjes van de desbetreffende persoon bezoeken.
 
 De pagina is responsive en is Mobile first ontworpen en gemaakt.
@@ -37,23 +36,27 @@ In het onderdeel 'Amstelcampus' staan foto's die wij hebben gemaakt van verschil
 
 
 ## Kenmerken
-De website is gebouwd met HTML, CSS en JavaScript.
+De website is gebouwd met HTML en CSS.
 
 ### HTML
 Hieronder staat de basis structuur uitgelegd met de setting in de HEAD en opmaak van de BODY:
 
 #### Head
-In de head wordt een CSS file en een JavaScript geladen. De styling van de HTML wordt via de CSS file bepaald. De knoppen worden via JavaScript bruikbaar gemaakt.
+In de `<head>` wordt een CSS file geladen. De styling van de HTML wordt via de CSS file bepaald.
 
-'<link rel="stylesheet" href="styles/style.css">'
-'<script src="scripts/script.js"></script>'
+
+```HTML
+<link rel="stylesheet" href="styles/style.css">
+```
 
 In de head wordt ook een extern font geladen: De Roboto
 
-'<link rel="preconnect" href="https://fonts.googleapis.com">'
+```HTML
+<link rel="preconnect" href="https://fonts.googleapis.com">
+```
 
 ### Body
-De structuur van de body is HEADER, MAIN en FOOTER:
+De structuur van de body is [HEADER](#header), [MAIN](#main) en [FOOTER](#footer):
 
 #### Header
 In de header staat de navigatiebalk met links naar verschillende onderdelen van onze website.
@@ -61,18 +64,33 @@ In de header staat de navigatiebalk met links naar verschillende onderdelen van 
 #### Main
 In de main staan 3 secties. De sectie 'squad page 1j' met een id, de sectie 'visitekaartjes' met een id en de sectie 'amstelcampus' met een id. De id's worden gebruikt om vanuit de navigatiebalk te linken.
 
+```HTML
+<section id="squad-page-1j">
+
+<section id="visitekaartjes">
+
+<section id="amstelcampus">
+```
+
 Er worden verschillende HTML-elementen gebruikt om de opmaak te kunnen aanpassen, waaronder het 'div-element'.
 
+```HTML
+<div class="profile">
+  <h3>Maarten</h3>
+  <div><a href="https://github.com/MaartentePoele" target="_blank"><img src="assets/1J/Squad1J-Maarten.JPG" alt=""></a></div>
+</div>
+```
+
 #### Footer
-In de 'footer' staan de namen van de teamleden die deze website hebben gemaakt. 
+In de `<footer>` staan de namen van de teamleden die deze website hebben gemaakt. 
 
 ### CSS
-In de CSS staat een scroll-behavior: smooth; op de HTML voor een animatie als iemand op de links in de navigatiebalk klikt.
+In de CSS staat een `scroll-behavior: smooth;` op de HTML voor een animatie als iemand op de links in de navigatiebalk klikt.
 
 ## Over ons
-Wij zijn Maarten, Kevin en Sieuwke. 3 Eerste jaars studenten, uit klas 1J, van de HvA op de opleiding Frontend and Development. Ons team heet 'De Drie Musketier'.
+Wij zijn [Maarten](https://github.com/MaartentePoele), [Kevin](https://github.com/toasterbath0758) en [Sieuwke](https://github.com/SieuwkeSheta). 3 Eerste jaars studenten, uit klas 1J, van de HvA op de opleiding Frontend and Development. Ons team heet 'De Drie Musketier'.
 
-Gebruikers kunnen informatie krijgen over ons project door een van ons aan te spreken.
+Gebruikers kunnen informatie krijgen over onze website door één van ons aan te spreken of te berichten.
 
 ## Bronnen
 HTML elements reference https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
