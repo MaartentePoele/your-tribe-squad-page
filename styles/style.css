@@ -69,7 +69,7 @@ header {
     z-index: 10;
     padding: 1rem;
     font-size: small;
-    background-color: #351fb7;
+    background-color: #150d3d;
     color: #ffffff;
     max-width: 100vw;
 
@@ -168,8 +168,8 @@ header {
 
 }
 
-@media (min-width: 992px) {
-
+/* Hoort bij de keyframes van hierboven */
+@media (min-width: 992px) { 
     .profile {
         transform: translateX(calc(-15em * 23));
     }
@@ -180,6 +180,7 @@ header {
         transform: translateX(calc(-17em * 23));
     }
 }
+/* ------------------------------------------ */
 
 /* Foto's met namen */
 .profile {
@@ -268,14 +269,11 @@ header {
 
 /* BEGIN MAARTEN */
 
-.welkom {
-    justify-items: center;
-}
-
 #visitekaartjes {
     /* opmaak box met titel */
     background-color: #25167a;
 
+    /* spacing van de titel */
     margin: 2em;
     margin-bottom: 0em;
     padding: 1em;
@@ -289,6 +287,7 @@ header {
     /* opmaak box met kaartjes*/
     background-color: #25167a;
 
+    /* spacing van de visitekaartjes */
     margin: 2em;
     margin-top: 0em;
     padding: 2em;
@@ -300,20 +299,15 @@ header {
     /* kaartjes gaan in één kolom bij een paginabreedte van minder dan 750px */
     columns: 1;
     column-gap: 1em;
-}
 
-@media (min-width: 750px) {
-
-    /* kaartjes gaan in twee kolommen bij een paginabreedte tussen 750px en 959px */
-    .kaartjes {
+    /* mediaqueries */
+    @media (min-width: 750px) {
+        /* kaartjes gaan in twee kolommen bij een paginabreedte tussen 750px en 959px */
         columns: 2;
     }
-}
 
-@media (min-width: 960px) {
-
-    /* kaartjes gaan in drie kolommen bij een paginabreedte van 960px of meer */
-    .kaartjes {
+    @media (min-width: 960px) {
+        /* kaartjes gaan in drie kolommen bij een paginabreedte van 960px of meer */
         columns: 3;
     }
 }
@@ -323,6 +317,19 @@ header {
     width: 100%;
     border-radius: 25px;
     margin-bottom: 1em;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.50);
+
+    /* animatie */
+    transition: transform 0.25s ease-in-out;
+}
+
+.kaartje:hover {
+
+    /* animatie alleen als de gebruiker animation effects aan heeft staan */
+    @media (prefers-reduced-motion: no-preference) {
+        transform: scale(1.025);
+        box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    }
 }
 
 /* EINDE MAARTEN */
