@@ -370,5 +370,10 @@ footer {
     padding-top: 50px;
     margin-top: 2em;
 }
+.link-footer {
+    text-decoration: none;
+    color:white;
+}
+
 
 /* EINDE KEVIN */
