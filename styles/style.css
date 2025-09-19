@@ -285,6 +285,7 @@ header {
 }
 
 .kaartje:hover {
+
     /* animatie alleen als de gebruiker animation effects aan heeft staan */
     @media (prefers-reduced-motion: no-preference) {
         transform: scale(1.025);
@@ -335,8 +336,8 @@ footer {
 
 .link-footer {
     text-decoration: none;
-    color:white;
-    margin:10px;
+    color: white;
+    margin: 10px;
 }
 
 /* EINDE KEVIN */
