@@ -16,7 +16,7 @@ De pagina is responsive en is Mobile first ontworpen en gemaakt.
 
 #### 3 leuke dingen over onze site:
 - De carouselfunctie die de foto’s en namen van onze medestudenten laat zien
-- De knoppen op de header die een animatie hebben
+- Scrollanimatie als je op een knop in de header klikt
 - We hebben het kleurenpalet van de HvA website gebruikt
 
 Hier staat de website: https://edu.nl/7wnje 
@@ -58,6 +58,8 @@ In de head wordt ook een extern font geladen: De Roboto
 
 ```HTML
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 ```
 
 ### Body
@@ -93,7 +95,7 @@ In de `<footer>` staan de namen van de teamleden die deze website hebben gemaakt
 In de CSS staat een `scroll-behavior: smooth;` op de HTML voor een animatie als iemand op de links in de navigatiebalk klikt.
 
 ## Over ons
-Wij zijn [Maarten](https://github.com/MaartentePoele), [Kevin](https://github.com/toasterbath0758) en [Sieuwke](https://github.com/SieuwkeSheta). 3 Eerste jaars studenten, uit klas 1J, van de HvA op de opleiding Frontend and Development. Ons team heet 'De Drie Musketier'.
+Wij zijn [Maarten](https://github.com/MaartentePoele), [Kevin](https://github.com/toasterbath0758) en [Sieuwke](https://github.com/SieuwkeSheta). 3 Eerstejaars studenten, uit klas 1J, van de HvA op de opleiding Frontend and Development. Ons team heet: 'De Drie Musketier'.
 
 Gebruikers kunnen informatie krijgen over onze website door één van ons aan te spreken of te berichten.
 
